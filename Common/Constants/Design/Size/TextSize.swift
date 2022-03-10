@@ -8,5 +8,5 @@ import Foundation
 import SwiftUI
 
 struct TextSize {
-    static let SUPER_LARGE_TITLE_SIZE = CGFloat(48)
+    static let LARGE_TITLE_SIZE = CGFloat(36)
 }

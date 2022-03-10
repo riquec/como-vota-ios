@@ -17,10 +17,8 @@ struct WelcomeView: View {
     
     var title: some View {
         HStack {
-            Text("Como Vota,\ndeputado?")
-                .font(.custom("bold", size: TextSize.SUPER_LARGE_TITLE_SIZE))
+            LargeTitleView(verbatim: WelcomeTexts.TITLE)
                 .foregroundColor(.white)
-                .multilineTextAlignment(.leading)
                 .padding(.leading, Spacing.SPACING_08)
             Spacer()
         }
