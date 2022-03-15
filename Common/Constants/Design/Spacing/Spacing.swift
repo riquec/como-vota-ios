@@ -9,5 +9,6 @@ import Foundation
 import SwiftUI
 
 struct Spacing {
+    static let SPACING_NONE = CGFloat(0)
     static let SPACING_08 = CGFloat(16)
 }

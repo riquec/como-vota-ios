@@ -9,4 +9,6 @@ import Foundation
 
 struct WelcomeTexts {
     static let TITLE = "Como vota,\ndeputado?"
+    static let SIGN_UP_TEXT = "Cadastre-se"
+    static let LOGIN_TEXT = "Já tenho conta"
 }

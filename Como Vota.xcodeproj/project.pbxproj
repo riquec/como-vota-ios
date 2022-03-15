@@ -25,6 +25,8 @@
 		EE285AE727DA1A5D00373148 /* IBMPlexMono-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE285AD927DA1A5D00373148 /* IBMPlexMono-ExtraLightItalic.ttf */; };
 		EE285AEB27DA1C0700373148 /* LargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE285AEA27DA1C0700373148 /* LargeTitleView.swift */; };
 		EE285AEF27DA1FFD00373148 /* WelcomeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE285AEE27DA1FFD00373148 /* WelcomeText.swift */; };
+		EEC88FBC27E0B9CB006728C0 /* BorderSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */; };
+		EEC88FC227E0BF74006728C0 /* ThirdButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */; };
 		EEF9143927D8BF3600603BA3 /* Como_VotaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9142927D8BF3400603BA3 /* Como_VotaApp.swift */; };
 		EEF9143A27D8BF3600603BA3 /* Como_VotaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9142927D8BF3400603BA3 /* Como_VotaApp.swift */; };
 		EEF9143B27D8BF3600603BA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9142A27D8BF3400603BA3 /* ContentView.swift */; };
@@ -56,6 +58,8 @@
 		EE285AE827DA1B2000373148 /* Como-Vota--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Como-Vota--iOS--Info.plist"; sourceTree = "<group>"; };
 		EE285AEA27DA1C0700373148 /* LargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleView.swift; sourceTree = "<group>"; };
 		EE285AEE27DA1FFD00373148 /* WelcomeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeText.swift; sourceTree = "<group>"; };
+		EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSize.swift; sourceTree = "<group>"; };
+		EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdButtonView.swift; sourceTree = "<group>"; };
 		EEF9142927D8BF3400603BA3 /* Como_VotaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Como_VotaApp.swift; sourceTree = "<group>"; };
 		EEF9142A27D8BF3400603BA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEF9142B27D8BF3500603BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,8 +92,8 @@
 		EE285AC527DA146100373148 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EEC88FB927E0B380006728C0 /* Button */,
 				EE285AE927DA1BED00373148 /* Text */,
-				EE285AC627DA162600373148 /* PrimaryButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -116,6 +120,23 @@
 				EE285AEA27DA1C0700373148 /* LargeTitleView.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		EEC88FB927E0B380006728C0 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				EE285AC627DA162600373148 /* PrimaryButtonView.swift */,
+				EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		EEC88FBA27E0B9AD006728C0 /* Border */ = {
+			isa = PBXGroup;
+			children = (
+				EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */,
+			);
+			path = Border;
 			sourceTree = "<group>";
 		};
 		EEF9142327D8BF3400603BA3 = {
@@ -204,6 +225,7 @@
 		EEF9145027D8CACE00603BA3 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				EEC88FBA27E0B9AD006728C0 /* Border */,
 				EEF9145127D8CB4800603BA3 /* Spacing */,
 				EEF9144D27D8C40800603BA3 /* Size */,
 			);
@@ -351,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC88FBC27E0B9CB006728C0 /* BorderSize.swift in Sources */,
 				EEF9143B27D8BF3600603BA3 /* ContentView.swift in Sources */,
 				EEF9144F27D8C41E00603BA3 /* TextSize.swift in Sources */,
 				EEF9145327D8CB8800603BA3 /* Spacing.swift in Sources */,
@@ -359,6 +382,7 @@
 				EEF9143927D8BF3600603BA3 /* Como_VotaApp.swift in Sources */,
 				EE285ACB27DA17F500373148 /* FontExt.swift in Sources */,
 				EE285AC727DA162600373148 /* PrimaryButtonView.swift in Sources */,
+				EEC88FC227E0BF74006728C0 /* ThirdButtonView.swift in Sources */,
 				EE285AEB27DA1C0700373148 /* LargeTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

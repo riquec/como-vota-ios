@@ -12,4 +12,8 @@ extension Font {
     static func boldFont(size: CGFloat) -> Font {
       return .custom("IBMPlexMono-Medium", size: size)
     }
+    
+    static func regularFont(size: CGFloat) -> Font {
+      return .custom("IBMPlexMono-Regular", size: size)
+    }
 }
