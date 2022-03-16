@@ -12,5 +12,5 @@ import Foundation
 struct BorderSize {
     
     // Title
-    static let ROUNDED_BUTTON_BORDER_SIZE = CGFloat(6)
+    static let ROUNDED_BUTTON_BORDER_SIZE = CGFloat(8)
 }
