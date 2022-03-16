@@ -27,6 +27,9 @@
 		EE285AEF27DA1FFD00373148 /* WelcomeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE285AEE27DA1FFD00373148 /* WelcomeText.swift */; };
 		EEC88FBC27E0B9CB006728C0 /* BorderSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */; };
 		EEC88FC227E0BF74006728C0 /* ThirdButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */; };
+		EEDD956A27E21C9F00531F6F /* WelcomeNavigationDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD956927E21C9F00531F6F /* WelcomeNavigationDestinations.swift */; };
+		EEDD956D27E21F5400531F6F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD956C27E21F5400531F6F /* LoginView.swift */; };
+		EEDD957027E21F7F00531F6F /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD956F27E21F7F00531F6F /* SignupView.swift */; };
 		EEF9143927D8BF3600603BA3 /* Como_VotaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9142927D8BF3400603BA3 /* Como_VotaApp.swift */; };
 		EEF9143A27D8BF3600603BA3 /* Como_VotaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9142927D8BF3400603BA3 /* Como_VotaApp.swift */; };
 		EEF9143B27D8BF3600603BA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF9142A27D8BF3400603BA3 /* ContentView.swift */; };
@@ -60,6 +63,9 @@
 		EE285AEE27DA1FFD00373148 /* WelcomeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeText.swift; sourceTree = "<group>"; };
 		EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSize.swift; sourceTree = "<group>"; };
 		EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdButtonView.swift; sourceTree = "<group>"; };
+		EEDD956927E21C9F00531F6F /* WelcomeNavigationDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeNavigationDestinations.swift; sourceTree = "<group>"; };
+		EEDD956C27E21F5400531F6F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EEDD956F27E21F7F00531F6F /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		EEF9142927D8BF3400603BA3 /* Como_VotaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Como_VotaApp.swift; sourceTree = "<group>"; };
 		EEF9142A27D8BF3400603BA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEF9142B27D8BF3500603BA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,9 +145,27 @@
 			path = Border;
 			sourceTree = "<group>";
 		};
+		EEDD956B27E21F4000531F6F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD956C27E21F5400531F6F /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EEDD956E27E21F5E00531F6F /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD956F27E21F7F00531F6F /* SignupView.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		EEF9142327D8BF3400603BA3 = {
 			isa = PBXGroup;
 			children = (
+				EEDD956E27E21F5E00531F6F /* Signup */,
+				EEDD956B27E21F4000531F6F /* Login */,
 				EE285AE827DA1B2000373148 /* Como-Vota--iOS--Info.plist */,
 				EEF9145427D8CCD500603BA3 /* Fonts */,
 				EEF9144B27D8C3DD00603BA3 /* Common */,
@@ -192,6 +216,7 @@
 			children = (
 				EEF9144927D8C12300603BA3 /* WelcomeView.swift */,
 				EE285AEE27DA1FFD00373148 /* WelcomeText.swift */,
+				EEDD956927E21C9F00531F6F /* WelcomeNavigationDestinations.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -373,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDD957027E21F7F00531F6F /* SignupView.swift in Sources */,
 				EEC88FBC27E0B9CB006728C0 /* BorderSize.swift in Sources */,
 				EEF9143B27D8BF3600603BA3 /* ContentView.swift in Sources */,
 				EEF9144F27D8C41E00603BA3 /* TextSize.swift in Sources */,
@@ -380,8 +406,10 @@
 				EEF9144A27D8C12300603BA3 /* WelcomeView.swift in Sources */,
 				EE285AEF27DA1FFD00373148 /* WelcomeText.swift in Sources */,
 				EEF9143927D8BF3600603BA3 /* Como_VotaApp.swift in Sources */,
+				EEDD956A27E21C9F00531F6F /* WelcomeNavigationDestinations.swift in Sources */,
 				EE285ACB27DA17F500373148 /* FontExt.swift in Sources */,
 				EE285AC727DA162600373148 /* PrimaryButtonView.swift in Sources */,
+				EEDD956D27E21F5400531F6F /* LoginView.swift in Sources */,
 				EEC88FC227E0BF74006728C0 /* ThirdButtonView.swift in Sources */,
 				EE285AEB27DA1C0700373148 /* LargeTitleView.swift in Sources */,
 			);

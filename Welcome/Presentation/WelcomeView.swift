@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    
+    @State private var destination: String? = nil
+    
     var body: some View {
-        VStack {
-            Spacer()
-            title
-            Spacer()
-            bottomButtons
+        NavigationView {
+            VStack {
+                NavigationLink(
+                    destination: LoginView(),
+                    tag: WelcomeNavigationDestinations.LOGIN,
+                    selection: $destination
+                ) { EmptyView() }
+                
+                NavigationLink(
+                    destination: SignupView(),
+                    tag: WelcomeNavigationDestinations.SIGN_UP,
+                    selection: $destination
+                ) { EmptyView() }
+
+                Spacer()
+                title
+                Spacer()
+                bottomButtons
+            }.navigationBarTitleDisplayMode(.inline)
+            .background(Image("welcome-background"))
         }
-        .background(Image("welcome-background"))
+
     }
     
     var title: some View {
@@ -33,7 +51,7 @@ struct WelcomeView: View {
         VStack {
             PrimaryButtonView(
                 verbatim: WelcomeTexts.SIGN_UP_TEXT,
-                onClick: { print("sign up clicked") },
+                onClick: { destination = WelcomeNavigationDestinations.SIGN_UP },
                 backgroundColor: .white,
                 textColor: .black
             )
@@ -47,7 +65,7 @@ struct WelcomeView: View {
                 )
             ThirdButtonView(
                 verbatim: WelcomeTexts.LOGIN_TEXT,
-                onClick: { print("sign up clicked") },
+                onClick: { destination = WelcomeNavigationDestinations.LOGIN },
                 textColor: .white
             )
                 .padding(
