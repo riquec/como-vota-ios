@@ -1,13 +1,13 @@
 //
-//  LoginEmailView.swift
+//  LoginPasswordView.swift
 //  Como Vota (iOS)
 //
-//  Created by Henrique Cortinovis on 16/03/22.
+//  Created by Henrique Cortinovis on 17/03/22.
 //
 
 import SwiftUI
 
-struct LoginEmailView: View {
+struct LoginPasswordView: View {
     @State private var email: String = ""
     
     var body: some View {
@@ -22,7 +22,7 @@ struct LoginEmailView: View {
     var middleContent : some View {
         VStack {
             HStack {
-                Text("Qual seu\n**email**?")
+                Text("E qual\nsua **senha**?")
                     .font(.boldFont(size: TextSize.LARGE_TITLE_SIZE))
                     .multilineTextAlignment(.leading)
                     .foregroundColor(.black)
@@ -39,7 +39,7 @@ struct LoginEmailView: View {
     
     var bottomContent: some View {
         PrimaryButtonView(
-            verbatim: WelcomeTexts.SIGN_UP_TEXT,
+            verbatim: LoginText.BUTTON_GET_IN,
             onClick: { },
             backgroundColor: .black,
             textColor: .white
@@ -55,8 +55,8 @@ struct LoginEmailView: View {
     }
 }
 
-struct LoginEmailView_Previews: PreviewProvider {
+struct LoginPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginEmailView()
+        LoginPasswordView()
     }
 }

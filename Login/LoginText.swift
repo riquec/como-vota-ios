@@ -9,4 +9,5 @@ import Foundation
 
 struct LoginText {
     static let LABEL_EMAIL = "Qual seu\n**email**?"
+    static let BUTTON_GET_IN = "Entrar"
 }
