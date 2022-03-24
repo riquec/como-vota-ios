@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     private static let EMAIL_STEP = "EMAIL"
     private static let PASSWORD_STEP = "PASSWORD"
@@ -15,9 +16,8 @@ struct LoginView: View {
     private let steps: [String] = [EMAIL_STEP, PASSWORD_STEP]
     
     init() {
-        UIPageControl.appearance().currentPageIndicatorTintColor = .blue
-                UIPageControl.appearance().pageIndicatorTintColor = .red
-                UIPageControl.appearance().tintColor = .red
+        UIPageControl.appearance().currentPageIndicatorTintColor = .black
+            UIPageControl.appearance().pageIndicatorTintColor = UIColor.black.withAlphaComponent(0.2)
     }
  
     var body: some View {
@@ -33,23 +33,23 @@ struct LoginView: View {
                     }
                 }
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            .overlay(dots, alignment: .top)
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: btnBack)
     }
     
-    private var dots: some View {
-        HStack(spacing: 15) {
-            ForEach(steps.indices, id: \.self) { index in
-                Capsule()
-                    .fill(Color.black)
-                    .frame(width: DotIndicatorSize.DOT_SIZE, height: DotIndicatorSize.DOT_SIZE)
-                    .padding(.top, Spacing.SPACING_10)
-                
+    var btnBack : some View { Button(action: {
+            self.presentationMode.wrappedValue.dismiss()
+            }) {
+                HStack {
+                    Image("back-black")
+                        .resizable()
+                        .frame(width: 24.0, height: 24.0)
+                        .foregroundColor(.white)
+                }
             }
         }
-    
-    }
 }
 
 struct LoginView_Previews: PreviewProvider {

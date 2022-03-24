@@ -25,6 +25,7 @@
 		EE285AE727DA1A5D00373148 /* IBMPlexMono-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE285AD927DA1A5D00373148 /* IBMPlexMono-ExtraLightItalic.ttf */; };
 		EE285AEB27DA1C0700373148 /* LargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE285AEA27DA1C0700373148 /* LargeTitleView.swift */; };
 		EE285AEF27DA1FFD00373148 /* WelcomeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE285AEE27DA1FFD00373148 /* WelcomeText.swift */; };
+		EE3CC93E27EC98E3000B63B6 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC93D27EC98E3000B63B6 /* BackButtonView.swift */; };
 		EEC5261A27EB4B3D00CB6EC7 /* DotIndicatorSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC5261927EB4B3D00CB6EC7 /* DotIndicatorSize.swift */; };
 		EEC88FBC27E0B9CB006728C0 /* BorderSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */; };
 		EEC88FC227E0BF74006728C0 /* ThirdButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */; };
@@ -66,6 +67,7 @@
 		EE285AE827DA1B2000373148 /* Como-Vota--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Como-Vota--iOS--Info.plist"; sourceTree = "<group>"; };
 		EE285AEA27DA1C0700373148 /* LargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleView.swift; sourceTree = "<group>"; };
 		EE285AEE27DA1FFD00373148 /* WelcomeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeText.swift; sourceTree = "<group>"; };
+		EE3CC93D27EC98E3000B63B6 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 		EEC5261927EB4B3D00CB6EC7 /* DotIndicatorSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotIndicatorSize.swift; sourceTree = "<group>"; };
 		EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSize.swift; sourceTree = "<group>"; };
 		EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdButtonView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				EE285AC627DA162600373148 /* PrimaryButtonView.swift */,
 				EEC88FC127E0BF74006728C0 /* ThirdButtonView.swift */,
+				EE3CC93D27EC98E3000B63B6 /* BackButtonView.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				EE285AEF27DA1FFD00373148 /* WelcomeText.swift in Sources */,
 				EEDD957427E22DAC00531F6F /* LoginText.swift in Sources */,
 				EEF9143927D8BF3600603BA3 /* Como_VotaApp.swift in Sources */,
+				EE3CC93E27EC98E3000B63B6 /* BackButtonView.swift in Sources */,
 				EEDD956A27E21C9F00531F6F /* WelcomeNavigationDestinations.swift in Sources */,
 				EEEB501C27E34D28004D4B6D /* LoginPasswordView.swift in Sources */,
 				EE285ACB27DA17F500373148 /* FontExt.swift in Sources */,

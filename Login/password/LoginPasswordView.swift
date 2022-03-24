@@ -48,7 +48,7 @@ struct LoginPasswordView: View {
                 EdgeInsets(
                     top: Spacing.SPACING_NONE,
                     leading: Spacing.SPACING_08,
-                    bottom: Spacing.SPACING_10,
+                    bottom: Spacing.SPACING_12,
                     trailing: Spacing.SPACING_08
                 )
             )

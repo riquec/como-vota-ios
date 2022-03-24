@@ -16,4 +16,6 @@ struct Spacing {
     static let SPACING_08 = CGFloat(16)
     static let SPACING_09 = CGFloat(20)
     static let SPACING_10 = CGFloat(24)
+    static let SPACING_11 = CGFloat(36)
+    static let SPACING_12 = CGFloat(48)
 }
