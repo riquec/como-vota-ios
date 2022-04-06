@@ -1,0 +1,6 @@
+framework module Pods_Como_Vota__macOS_ {
+  umbrella header "Pods-Como Vota (macOS)-umbrella.h"
+
+  export *
+  module * { export * }
+}

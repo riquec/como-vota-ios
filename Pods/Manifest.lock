@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.5.0)
+  - Observable (2.2.0)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxSwift (6.5.0)
+
+DEPENDENCIES:
+  - Observable
+  - RxAlamofire
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Observable
+    - RxAlamofire
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Observable: d5369c555eae9d022cb066867786f6b9470de33c
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+
+PODFILE CHECKSUM: f431c3288df8b64e9a9d2a074343404950e4de46
+
+COCOAPODS: 1.11.3

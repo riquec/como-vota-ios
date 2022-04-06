@@ -35,21 +35,7 @@ struct LoginView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         }
-        .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: btnBack)
     }
-    
-    var btnBack : some View { Button(action: {
-            self.presentationMode.wrappedValue.dismiss()
-            }) {
-                HStack {
-                    Image("back-black")
-                        .resizable()
-                        .frame(width: 24.0, height: 24.0)
-                        .foregroundColor(.white)
-                }
-            }
-        }
 }
 
 struct LoginView_Previews: PreviewProvider {
