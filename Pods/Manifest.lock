@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.5.0)
+  - ETBinding (3.0)
   - Observable (2.2.0)
   - RxAlamofire (6.1.1):
     - RxAlamofire/Core (= 6.1.1)
@@ -7,24 +8,32 @@ PODS:
     - Alamofire (~> 5.4)
     - RxSwift (~> 6.0)
   - RxSwift (6.5.0)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - ETBinding
   - Observable
   - RxAlamofire
+  - RxSwift
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ETBinding
     - Observable
     - RxAlamofire
     - RxSwift
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  ETBinding: 27be01c2b38dbc88b63189a0ca05187cd24be2ec
   Observable: d5369c555eae9d022cb066867786f6b9470de33c
   RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: f431c3288df8b64e9a9d2a074343404950e4de46
+PODFILE CHECKSUM: 81f2da736de1164e115162388634ea90691a6476
 
 COCOAPODS: 1.11.3

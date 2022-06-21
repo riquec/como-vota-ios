@@ -8,7 +8,9 @@ target 'Como Vota (iOS)' do
   # Pods for Como Vota (iOS)
   pod 'Observable'
   pod 'RxAlamofire'
-
+  pod 'ETBinding'
+  pod 'RxSwift'
+  pod 'SwiftyJSON'
 
 end
 

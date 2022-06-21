@@ -31,7 +31,15 @@
 		EE285AE727DA1A5D00373148 /* IBMPlexMono-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE285AD927DA1A5D00373148 /* IBMPlexMono-ExtraLightItalic.ttf */; };
 		EE285AEB27DA1C0700373148 /* LargeTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE285AEA27DA1C0700373148 /* LargeTitleView.swift */; };
 		EE285AEF27DA1FFD00373148 /* WelcomeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE285AEE27DA1FFD00373148 /* WelcomeText.swift */; };
+		EE38C599285DDF5A007F24DD /* NominalVoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38C598285DDF5A007F24DD /* NominalVoteViewModel.swift */; };
+		EE38C59B285DDF8A007F24DD /* NominalVoteViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38C59A285DDF8A007F24DD /* NominalVoteViewState.swift */; };
+		EE38C5A0285DE5A6007F24DD /* VisibilityExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38C59F285DE5A6007F24DD /* VisibilityExt.swift */; };
+		EE38C5A3285F48EA007F24DD /* NominalVoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38C5A2285F48EA007F24DD /* NominalVoteService.swift */; };
 		EE3CC93E27EC98E3000B63B6 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC93D27EC98E3000B63B6 /* BackButtonView.swift */; };
+		EE48C4042858AF6200B2A9DC /* NominalVoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48C4032858AF6200B2A9DC /* NominalVoteView.swift */; };
+		EE48C4072858B28100B2A9DC /* VoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48C4062858B28100B2A9DC /* VoteItem.swift */; };
+		EE48C4092858B32E00B2A9DC /* VoteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48C4082858B32E00B2A9DC /* VoteRowView.swift */; };
+		EE51598B2860A7AC00148240 /* NominalVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE51598A2860A7AC00148240 /* NominalVote.swift */; };
 		EE9B17DA27FDA657006175DB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B17D927FDA657006175DB /* LoginViewModel.swift */; };
 		EEC5261A27EB4B3D00CB6EC7 /* DotIndicatorSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC5261927EB4B3D00CB6EC7 /* DotIndicatorSize.swift */; };
 		EEC88FBC27E0B9CB006728C0 /* BorderSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */; };
@@ -83,7 +91,15 @@
 		EE285AE827DA1B2000373148 /* Como-Vota--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Como-Vota--iOS--Info.plist"; sourceTree = "<group>"; };
 		EE285AEA27DA1C0700373148 /* LargeTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeTitleView.swift; sourceTree = "<group>"; };
 		EE285AEE27DA1FFD00373148 /* WelcomeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeText.swift; sourceTree = "<group>"; };
+		EE38C598285DDF5A007F24DD /* NominalVoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominalVoteViewModel.swift; sourceTree = "<group>"; };
+		EE38C59A285DDF8A007F24DD /* NominalVoteViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominalVoteViewState.swift; sourceTree = "<group>"; };
+		EE38C59F285DE5A6007F24DD /* VisibilityExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityExt.swift; sourceTree = "<group>"; };
+		EE38C5A2285F48EA007F24DD /* NominalVoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominalVoteService.swift; sourceTree = "<group>"; };
 		EE3CC93D27EC98E3000B63B6 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
+		EE48C4032858AF6200B2A9DC /* NominalVoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominalVoteView.swift; sourceTree = "<group>"; };
+		EE48C4062858B28100B2A9DC /* VoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteItem.swift; sourceTree = "<group>"; };
+		EE48C4082858B32E00B2A9DC /* VoteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteRowView.swift; sourceTree = "<group>"; };
+		EE51598A2860A7AC00148240 /* NominalVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NominalVote.swift; sourceTree = "<group>"; };
 		EE9B17D927FDA657006175DB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EEC5261927EB4B3D00CB6EC7 /* DotIndicatorSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotIndicatorSize.swift; sourceTree = "<group>"; };
 		EEC88FBB27E0B9CB006728C0 /* BorderSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSize.swift; sourceTree = "<group>"; };
@@ -219,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				EE285ACA27DA17F500373148 /* FontExt.swift */,
+				EE38C59F285DE5A6007F24DD /* VisibilityExt.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -229,6 +246,67 @@
 				EE285AEA27DA1C0700373148 /* LargeTitleView.swift */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		EE38C59C285DE2CD007F24DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE38C5A1285F48BE007F24DD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE38C5A2285F48EA007F24DD /* NominalVoteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EE48C4012858AF0800B2A9DC /* NominalVoteList */ = {
+			isa = PBXGroup;
+			children = (
+				EE5159882860A69900148240 /* Data */,
+				EE48C4022858AF4900B2A9DC /* Presentation */,
+			);
+			path = NominalVoteList;
+			sourceTree = "<group>";
+		};
+		EE48C4022858AF4900B2A9DC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EE48C4052858B26500B2A9DC /* Model */,
+				EE48C4032858AF6200B2A9DC /* NominalVoteView.swift */,
+				EE48C4082858B32E00B2A9DC /* VoteRowView.swift */,
+				EE38C598285DDF5A007F24DD /* NominalVoteViewModel.swift */,
+				EE38C59A285DDF8A007F24DD /* NominalVoteViewState.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EE48C4052858B26500B2A9DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE48C4062858B28100B2A9DC /* VoteItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE5159882860A69900148240 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE5159892860A6AD00148240 /* Model */,
+				EE38C5A1285F48BE007F24DD /* Service */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE5159892860A6AD00148240 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE51598A2860A7AC00148240 /* NominalVote.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EE9B17D827FDA509006175DB /* presentation */ = {
@@ -305,6 +383,7 @@
 		EEF9142327D8BF3400603BA3 = {
 			isa = PBXGroup;
 			children = (
+				EE48C4012858AF0800B2A9DC /* NominalVoteList */,
 				EE01D64527FDB0B8000C4294 /* Auth */,
 				EE285AE827DA1B2000373148 /* Como-Vota--iOS--Info.plist */,
 				EEF9145427D8CCD500603BA3 /* Fonts */,
@@ -366,6 +445,7 @@
 		EEF9144B27D8C3DD00603BA3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				EE38C59C285DE2CD007F24DD /* View */,
 				EE285AC827DA17C800373148 /* Extensions */,
 				EE285AC527DA146100373148 /* Components */,
 				EEF9144C27D8C40000603BA3 /* Constants */,
@@ -611,6 +691,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE01D64027FDAC70000C4294 /* ApiConstants.swift in Sources */,
+				EE48C4042858AF6200B2A9DC /* NominalVoteView.swift in Sources */,
+				EE38C5A0285DE5A6007F24DD /* VisibilityExt.swift in Sources */,
+				EE51598B2860A7AC00148240 /* NominalVote.swift in Sources */,
 				EEDD957027E21F7F00531F6F /* SignupView.swift in Sources */,
 				EEDD957227E22CCF00531F6F /* LoginEmailView.swift in Sources */,
 				EEC88FBC27E0B9CB006728C0 /* BorderSize.swift in Sources */,
@@ -618,11 +701,13 @@
 				EEEB501F27E34EF1004D4B6D /* CommonTexts.swift in Sources */,
 				EEF9144F27D8C41E00603BA3 /* TextSize.swift in Sources */,
 				EEF9145327D8CB8800603BA3 /* Spacing.swift in Sources */,
+				EE48C4092858B32E00B2A9DC /* VoteRowView.swift in Sources */,
 				EE01D64427FDAD5D000C4294 /* LoginRequestPayload.swift in Sources */,
 				EEF9144A27D8C12300603BA3 /* WelcomeView.swift in Sources */,
 				EE285AEF27DA1FFD00373148 /* WelcomeText.swift in Sources */,
 				EEDD957427E22DAC00531F6F /* LoginText.swift in Sources */,
 				EEF9143927D8BF3600603BA3 /* Como_VotaApp.swift in Sources */,
+				EE38C5A3285F48EA007F24DD /* NominalVoteService.swift in Sources */,
 				EE3CC93E27EC98E3000B63B6 /* BackButtonView.swift in Sources */,
 				EE01D64827FDB0D6000C4294 /* AuthenticatedUserResponsePayload.swift in Sources */,
 				EEDD956A27E21C9F00531F6F /* WelcomeNavigationDestinations.swift in Sources */,
@@ -631,8 +716,11 @@
 				EE285AC727DA162600373148 /* PrimaryButtonView.swift in Sources */,
 				EEC5261A27EB4B3D00CB6EC7 /* DotIndicatorSize.swift in Sources */,
 				EEDD956D27E21F5400531F6F /* LoginView.swift in Sources */,
+				EE38C59B285DDF8A007F24DD /* NominalVoteViewState.swift in Sources */,
 				EEC88FC227E0BF74006728C0 /* ThirdButtonView.swift in Sources */,
 				EE285AEB27DA1C0700373148 /* LargeTitleView.swift in Sources */,
+				EE38C599285DDF5A007F24DD /* NominalVoteViewModel.swift in Sources */,
+				EE48C4072858B28100B2A9DC /* VoteItem.swift in Sources */,
 				EE01D63D27FDAC2F000C4294 /* LoginRemoteDataSource.swift in Sources */,
 				EE9B17DA27FDA657006175DB /* LoginViewModel.swift in Sources */,
 			);
