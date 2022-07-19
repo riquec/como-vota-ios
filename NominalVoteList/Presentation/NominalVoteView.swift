@@ -15,7 +15,11 @@ struct NominalVoteView: View {
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
-            ProgressView()
+            ProgressView("Carregando")
+                .foregroundColor(.white)
+                .font(.boldFont(size: TextSize.LABEL_SMALL_SIZE))
+                .padding(Spacing.SPACING_04)
+                .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
                 .hidden(!$viewModel.nominalVoteViewState.isLoading.wrappedValue)
             VStack {
                 HStack {
@@ -33,6 +37,11 @@ struct NominalVoteView: View {
                             .listRowSeparator(Visibility.hidden)
                             .listRowBackground(Color.clear)
                             .frame(maxWidth: .infinity)
+                        
+                        ActivityIndicator()
+                            .onAppear {
+                                viewModel.onScrollEnded()
+                            }
                     }
                     .frame(maxWidth: .infinity)
                     .listStyle(.plain)

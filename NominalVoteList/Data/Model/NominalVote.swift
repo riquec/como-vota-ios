@@ -7,28 +7,22 @@
 
 import Foundation
 
-struct NominalVote : Codable {
-    let id, title, votedAt, createdAt: String
-    let link: String
-    let details: Details
-
-    enum CodingKeys: String, CodingKey {
-        case id, title
-        case votedAt = "voted_at"
-        case createdAt = "created_at"
-        case link, details
-    }
+struct NominalVoteItems : Codable {
+    let currentPage: Int
+    let items: Array<NominalVoteItem>
     
+    enum CodingKeys: String, CodingKey {
+        case items
+        case currentPage = "current_page"
+    }
 }
 
-struct Details: Codable {
-    let detailsDescription: String
-    let voteLink: String
-    let themes: String
+struct NominalVoteItem : Codable {
+    let title, date, status: String
+    let detailsLink: String
 
     enum CodingKeys: String, CodingKey {
-        case detailsDescription = "description"
-        case voteLink = "vote_link"
-        case themes
+        case title, date, status
+        case detailsLink = "details_link"
     }
 }

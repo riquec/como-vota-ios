@@ -16,21 +16,27 @@ class NominalVoteViewModel : ObservableObject {
     
     private let disposeBag = DisposeBag.init()
     
+    private var pageToRequest = 0
+    
     init() {
-        print("init called")
+        getNominalVoteList()
+    }
+    
+    func onScrollEnded() {
+        print("onScrollEnded")
         getNominalVoteList()
     }
     
     private func getNominalVoteList() {
-        NominalVoteService().getNominalVoteList()
+        pageToRequest += 1
+        NominalVoteService().getNominalVoteList(pageToRequest: pageToRequest)
             .do(
-                onNext: { list in
+                onNext: { votes in
                     var voteItemList = [VoteItem]()
                     
-                    list.forEach { item in
-                        let newVoteItem = VoteItem(id: item.id, description: item.title, date: item.votedAt)
+                    votes.items.forEach { item in
+                        let newVoteItem = VoteItem(id: UUID().uuidString, description: item.title, date: item.date)
                         voteItemList.append(newVoteItem)
-                        
                     }
                     
                     self.nominalVoteViewState.voteItems = voteItemList

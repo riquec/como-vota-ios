@@ -11,12 +11,12 @@ import RxSwift
 
 class NominalVoteService {
     
-    func getNominalVoteList() -> Observable<[NominalVote]>{
+    func getNominalVoteList(pageToRequest: Int) -> Observable<NominalVoteItems>{
         return RxAlamofire
-            .json(.get, "https://como-vota-2597.rj.r.appspot.com/news/nominal")
+            .json(.get, "https://como-vota-2597.rj.r.appspot.com/votes", parameters: ["page_to_request": pageToRequest])
             .map { data in
                 let jsonData = try JSONSerialization.data(withJSONObject: data)
-                return try JSONDecoder().decode([NominalVote].self, from: jsonData)
+                return try JSONDecoder().decode(NominalVoteItems.self, from: jsonData)
             }
     }
 }
